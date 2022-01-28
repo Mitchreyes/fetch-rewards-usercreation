@@ -1,38 +1,160 @@
+html,
+body {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: -1rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-family: 'Rubik';
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  font-family: 'Rubik';
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+select {
+  font-family: 'Rubik';
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #f0f8ff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  margin-top: 3rem;
+  max-height: 150px;
+  background-color: transparent;
+}
+.header {
+  color: black;
+  margin-top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-fields .input:focus {
+  border-bottom: 2px solid #cc9933;
+  outline: none;
+}
+
+.input-fields .input {
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid white;
+  border-radius: 2px;
+  padding: 10px;
+  color: white;
+  /* text-align: center; */
+  width: 80%;
+  transition: 0.25s;
+  resize: none;
+}
+
+.input-fields ::placeholder {
+  color: white;
+  /* opacity: 0.8; */
+}
+
+.input :-ms-input-placeholder {
+  color: white;
+}
+
+.input ::-ms-input-placeholder {
+  color: white;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-input {
+  background-color: white;
+  padding: 8px 0px 8px 6px;
+  display: inline-block;
+  width: 80%;
+  border: transparent;
+  /* text-align: center; */
+  box-sizing: border-box;
+  border-bottom: 2px solid white;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  /* min-height: 25px; */
+  line-height: 24px;
+
+  outline: none;
+  font-size: 1rem;
+  background-color: #301934;
+  color: rgba(255, 255, 255, 1);
+}
+
+.loading {
+  font-size: 0.5rem;
+  margin-top: 6rem;
+}
+
+.banner {
+  margin: 0;
+  font-size: 20px;
+}
+.register-screen {
+  min-width: 350px;
+  min-height: 470px;
+  padding: 25px;
+  /* padding-bottom: 40px; */
+  border-radius: 13px;
+  background-color: #301934;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 30%);
+  color: white;
+}
+
+.btn {
+  background-color: #cc9933;
+  width: 80%;
+  border: 0;
+  padding: 10px 0;
+  margin: 30px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.github {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.github a i {
+  color: #301934;
+}
+
+.github :hover {
+  color: #cc9933;
 }
